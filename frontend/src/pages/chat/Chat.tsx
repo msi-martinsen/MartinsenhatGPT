@@ -8,7 +8,7 @@ import rehypeRaw from "rehype-raw";
 import uuid from 'react-uuid';
 
 import styles from "./Chat.module.css";
-import Azure from "../../assets/martinsen.svg";
+import Azure from "../../assets/Azure.svg";
 
 import {
     ChatMessage,
@@ -550,7 +550,7 @@ const Chat = () => {
                         {!messages || messages.length < 1 ? (
                             <Stack className={styles.chatEmptyState}>
                                 <img
-                                    src={martinsen}
+                                    src={Azure}
                                     className={styles.chatIcon}
                                     aria-hidden="true"
                                 />
