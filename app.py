@@ -289,7 +289,7 @@ def stream_without_data(response, history_metadata={}):
 def conversation_without_data(request_body):
     openai.api_type = "azure"
     openai.api_base = AZURE_OPENAI_ENDPOINT if AZURE_OPENAI_ENDPOINT else f"https://{AZURE_OPENAI_RESOURCE}.openai.azure.com/"
-    openai.api_version = "2023-03-15-preview"
+    openai.api_version = AZURE_OPENAI_PREVIEW_API_VERSION
     openai.api_key = AZURE_OPENAI_KEY
 
     request_messages = request_body["messages"]
