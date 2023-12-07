@@ -602,7 +602,7 @@ def generate_title(conversation_messages):
         base_url = AZURE_OPENAI_ENDPOINT if AZURE_OPENAI_ENDPOINT else f"https://{AZURE_OPENAI_RESOURCE}.openai.azure.com/"
         openai.api_type = "azure"
         openai.api_base = base_url
-        openai.api_version = "2023-03-15-preview"
+        openai.api_version = "2023-06-01-preview"
         openai.api_key = AZURE_OPENAI_KEY
         completion = openai.ChatCompletion.create(    
             engine=AZURE_OPENAI_MODEL,
