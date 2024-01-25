@@ -555,7 +555,8 @@ const Chat = () => {
                                     aria-hidden="true"
                                 />
                                 <h1 className={styles.chatEmptyStateTitle}>Start chat</h1>
-                                <h2 className={styles.chatEmptyStateSubtitle}>Denne chatbot er konfigureret specifikt til martinsen.<br>Anmod eksempelvis om en regnskabsanalyse, f.eks. udvikling fra forrige år eller identificer mistænkelige transaktioner ved at indsætte data fra Excel. Spørg efter forslag til revisionshandlinger eller dokumenter, som kunden skal fremlægge som revisionsdokumentation..</h2>
+                                <h2 className={styles.chatEmptyStateSubtitle}>Denne chatbot er konfigureret specifikt til martinsen. 
+Anmod eksempelvis om en regnskabsanalyse, f.eks. udvikling fra forrige år eller identificer mistænkelige transaktioner ved at indsætte data fra Excel. Spørg efter forslag til revisionshandlinger eller dokumenter, som kunden skal fremlægge som revisionsdokumentation..</h2>
                             </Stack>
                         ) : (
                             <div className={styles.chatMessageStream} style={{ marginBottom: isLoading ? "40px" : "0px"}} role="log">
